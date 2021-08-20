@@ -6,14 +6,6 @@ import { useQuery } from "@apollo/react-hooks"
 import gql from "graphql-tag"
 import Search from './components/Search';
 import initialDetails from './data/initialDetails';
-// const GET_LISTS = gql`
-//   {
-//     type List {
-//       title: String
-//       contenu : String
-//     } 
-//   }
-// `
 
 
 

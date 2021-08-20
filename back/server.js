@@ -27,11 +27,9 @@ const startApolloServer = async () => {
     res.end();
   });
 
-  await new Promise((resolve) => app.listen({ port: 4000 }, resolve));
-  console.log(`🚀 Server ready at http://localhost:4000${server.graphqlPath}`);
-  console.log(
-    `🚀 Subscriptions ready at http://localhost:4000${server.subscriptionsPath}`
-  );
+  await new Promise((resolve) => app.listen({ port: 4001 }, resolve));
+  console.log(`🚀 Server ready at http://localhost:4001${server.graphqlPath}`);
+  
   return { server, app };
 };
 

@@ -5,6 +5,7 @@ const todoSchema = new mongoose.Schema(
     title: String,
     mission: String,
     isDone: Boolean,
+    owner_id: { type: mongoose.SchemaTypes.ObjectId, required: true },
    
   },
   { timestamps: true }
